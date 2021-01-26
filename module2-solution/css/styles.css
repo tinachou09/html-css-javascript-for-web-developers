@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #F0FFF0;
+}
+
+p {
+	color: blue;
+	font-size: 20px;
+  padding-top: 15px;
+}
+
+header, h2 {
+	color: violet;
+	font-size: 36px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+ul {
+	color: #DB7093;
+}
+
+
+.menu-section {
+  border: 1px solid plum;
+  background-color: #E6E6FA;
+  padding: 15px;
+  margin: 10px;
+}
+
+div > h3 {
+  color: black;
+  background-color: #FFE4E1;
+  text-align: center;
+  margin: 0px;
+  float: right;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  border: 2px solid black;
+  position: relative;
+  right: -16px;
+  top: -16px;
+  font-size: 25px;
+}
+
+h4 {
+  clear: left;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** mobile view **********/
+@media (max-width: 767px)  {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
+
+/********** tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** desktop view **********/
+@media (min-width: 992px)  {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
